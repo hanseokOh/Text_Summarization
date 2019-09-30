@@ -6,15 +6,15 @@ stanford university의 2019년 NLP 강좌인 cs224n의 15강. Natural Language G
 ---------------------
 
 ### 1. Summarization : Task Definition
+
 **Task Definition**: 입력 텍스트 x가 주어지면, x보다 짧으며 주요한 정보를 담고있는 요약된 y를 작성한다.
 
 #### Task는 Single-Document / Multi-Document로 구분하여 진행한다. 
 >> - **Single-Document**: 단일 문서 x를 요약하여 하나의 y를 작성한다.
 
 >> - **Multi-Document**: 다중의 문서 x1,,,xn을 요약하여 하나의 요약 y를 작성한다.
-
->>  일반적으로 x1,,,xn은 겹치는 내용이 있는 content이다. 
->>  e.g. News articles about the same event
+  
+    일반적으로 x1,,,xn은 겹치는 내용이 있는 content이다.  e.g. News articles about the same event
 
 Summarization은 어떠한 task이며, 관련한 연구, 데이터셋 그리고 코드등을 정리한 깃헙. 
 
@@ -57,7 +57,10 @@ Pre-neural summarization은 대개 extractive(추출적) 방식이었다.
 >>>- Edge weight는 문장 유사도에 비례한다.
 >>>- graph algorithms을 사용해서 어떤 문장들이 그래프에서 central한지 확인한다.
 
+
+
 ### 2. Summarization Evaluation : ROUGE
+
 **ROUGE** (Recall-Oriented Understudy for Gisting Evaluation)
 ![ROUGE](./img/ROUGE.png)
 
@@ -81,7 +84,10 @@ BLEU와 같이, n-gram overlap을 기반으로 한다.
 
   https://github.com/google-research/google-research/tree/master/rouge 
 
+
+
 ### 3. Neural Summarization (2015 ~ )
+
 - 2015 : Rush et at. 처음으로 seq2seq summarization 논문을 발표함
 - Single-Document abstractive summarization은 translation task이다!
 - 따라서 일반적인 seq2seq + attention NMT 방법들을 적용가능하다.
@@ -100,6 +106,7 @@ BLEU와 같이, n-gram overlap을 기반으로 한다.
 - [A survey of Neural Network-Based Summarization Methods, Dong, 2018]( https://arxiv.org/pdf/1804.04589.pdf )
 
 #### 3.1. Neural summarization : copy mechanisms
+
 Seq2seq + attention 시스템은 자연스로운 output을 형성하는데 뛰어났으나, details (like rare words)를 정확하게 복사하는데 성능이 저조했다.
 
 - **Copy mechanisms**은 seq2seq 시스템이 입력에서 출력으로 단어들과 구절들을 쉽게 복사할 수 있도록 attention을 사용한다.
@@ -139,6 +146,7 @@ Seq2seq + attention 시스템은 자연스로운 output을 형성하는데 뛰�
 
 
 ### 4.Bottom-up summarization
+
 copy mechansim의 단점인 copy too much 현상을 극복
 - content selection stage : 
     Neural sequence-tagging 모델을 사용해서 'include', 'don't-include'로 단어들에 태깅을 실시
@@ -155,6 +163,7 @@ simple but effective !
 
 - [Bottom-Up Abstractive Summarization, Gehrmann et al, 2018]( https://arxiv.org/pdf/1808.10792v1.pdf )
 
+
 ### 5.Neural Summarization via Reinforcement Learning
 
 - 2017 Paulus et al. 'deep reinforced' summarization model을 발표
@@ -165,7 +174,7 @@ simple but effective !
 
 - [A Deep Reinforced Model for Abstractive Summarization, Paulus et al, 2017]( https://arxiv.org/pdf/1705.04304.pdf )
 
--blog post
+- blog post
  https://einstein.ai/
 
 
