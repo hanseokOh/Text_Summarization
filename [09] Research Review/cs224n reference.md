@@ -1,23 +1,6 @@
-0930 Text Summarization 사례조사
+# cs224n Text Summarization part 참조내용 정리
+![cs224n-Lecture15.NLG](http://web.stanford.edu/class/cs224n/slides/cs224n-2019-lecture15-nlg.pdf)
 
-Domain
-- 고객리뷰
-- 신문
-- 논문
-
-Article
-- A review on automatic text summarization approaches (2016, JK Yogan)
-
-Github
-- awesome-text-summarization
-https://github.com/mathsyouth/awesome-text-summarization
-
-- python ROUGE
-https://github.com/google-research/google-research/tree/master/rouge
-
-
-------------------
-cs224n
 
 > Summarization : task definition
 - list of summarizatioin datasets, papers, and codebases
