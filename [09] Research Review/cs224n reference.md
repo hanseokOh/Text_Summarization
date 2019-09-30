@@ -1,50 +1,49 @@
-# cs224n Text Summarization part 참조내용 정리
-![cs224n-Lecture15.NLG](http://web.stanford.edu/class/cs224n/slides/cs224n-2019-lecture15-nlg.pdf)
+# cs224n Text Summarization part 
+[cs224n-Lecture15-Natural Language Generation](http://web.stanford.edu/class/cs224n/slides/cs224n-2019-lecture15-nlg.pdf)
 
+* * *
 
-> Summarization : task definition
+## 1. Summarization : Task Definition
 - list of summarizatioin datasets, papers, and codebases
-( https://github.com/mathsyouth/awesome-text-summarization )
 
-> summarization evaluation : ROUGE
-ROUGE : A pakage for Automatic Evaluation of Summaries, Lin, 2004
-( https://www.aclweb.org/anthology/W04-1013 )
+(https://github.com/mathsyouth/awesome-text-summarization)
 
-=> python implementation of ROUGE
+## 2. Summarization Evaluation : ROUGE
+[ROUGE : A pakage for Automatic Evaluation of Summaries, Lin, 2004](https://www.aclweb.org/anthology/W04-1013 )
+
+- python implementation of ROUGE
+
 ( https://github.com/google-research/google-research/tree/master/rouge )
 
-> Neural Summarization (2015 ~ )
-A Neural Attention Model for Abstractive Sentence Summarization, Rush et al, 2015
-( https://arxiv.org/pdf/1509.00685.pdf )
+## 3. Neural Summarization (2015 ~ )
+- [A Neural Attention Model for Abstractive Sentence Summarization, Rush et al, 2015]( https://arxiv.org/pdf/1509.00685.pdf )
 
-- A survey of Neural Network-Based Summarization Methods, Dong, 2018
-( https://arxiv.org/pdf/1804.04589.pdf )
+- [A survey of Neural Network-Based Summarization Methods, Dong, 2018]( https://arxiv.org/pdf/1804.04589.pdf )
 
-- Neural summarization : copy mechanisms
-Get To The Point : Summarization with Pointer-Generator Networks, See et al, 2017
-( https://arxiv.org/pdf/1704.04368.pdf )
+### 3.1. Neural summarization : copy mechanisms
+- [Get To The Point : Summarization with Pointer-Generator Networks, See et al, 2017]( https://arxiv.org/pdf/1704.04368.pdf )
 
-=> copy mechanism variants
-Language as a Latent Variable : Discrete Generative Models for Sentence Compression, Miao et al, 2016
-( https://arxiv.org/pdf/1609.07317.pdf )
-Abstractive Text Summarization using Sequence-to-sequence RNNs and Beyond, Nallapati et al, 2016
-( https://arxiv.org/pdf/1602.06023.pdf )
-Incorporating Copying Mechanism in Sequence-to-Sequence Learning, Gu et al, 2016
-( https://arxiv.org/pdf/1603.06393.pdf )
+> copy mechanism variants
+- [Language as a Latent Variable : Discrete Generative Models for Sentence Compression, Miao et al, 2016]( https://arxiv.org/pdf/1609.07317.pdf )
+
+- [Abstractive Text Summarization using Sequence-to-sequence RNNs and Beyond, Nallapati et al, 2016]( https://arxiv.org/pdf/1602.06023.pdf )
+
+- [ncorporating Copying Mechanism in Sequence-to-Sequence Learning, Gu et al, 2016]( https://arxiv.org/pdf/1603.06393.pdf )
 
 
-> Bottom-up summarization
+## 4.Bottom-up summarization
 copy mechansim의 단점인 copy too much 현상을 극복
-=> content selection stage / bottom-up attention stage 구분
+- content selection stage / bottom-up attention stage 구분
 
-Bottom-Up Abstractive Summarization, Gehrmann et al, 2018
-( https://arxiv.org/pdf/1808.10792v1.pdf )
+- [Bottom-Up Abstractive Summarization, Gehrmann et al, 2018]( https://arxiv.org/pdf/1808.10792v1.pdf )
 
-> Neural Summarization via Reinforcement Learning
-=> main idea: Use RL to directly optimze ROUGE-L
-A Deep Reinforced Model for Abstractive Summarization, Paulus et al, 2017
-( https://arxiv.org/pdf/1705.04304.pdf )
-=> blog post
+## 5.Neural Summarization via Reinforcement Learning
+- main idea: Use RL to directly optimze ROUGE-L
+
+- [A Deep Reinforced Model for Abstractive Summarization, Paulus et al, 2017]( https://arxiv.org/pdf/1705.04304.pdf )
+
+-blog post
+
 ( https://einstein.ai/)
 
 
