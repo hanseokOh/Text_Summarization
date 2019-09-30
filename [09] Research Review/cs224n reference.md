@@ -43,7 +43,7 @@ https://github.com/mathsyouth/awesome-text-summarization
 #### Pre-neural summarization
 Pre-neural summarization은 대개 extractive(추출적) 방식이었다.
 
-![Pipeline](./img/extractive_summariztion_pipeline.png "Pipeline")
+![Pipeline](./img/extractive_summarization_pipeline.PNG)
 > **Pipeline**:
 >> - **Content selection** : 포함할 문장들을 몇가지 선택한다.
 >> - **Information ordering**: 선택한 문장들의 순서를 정한다.
@@ -62,7 +62,7 @@ Pre-neural summarization은 대개 extractive(추출적) 방식이었다.
 ### 2. Summarization Evaluation : ROUGE
 
 **ROUGE** (Recall-Oriented Understudy for Gisting Evaluation)
-![ROUGE](./img/ROUGE.png)
+![ROUGE](./img/ROUGE.PNG)
 
 - [ROUGE : A pakage for Automatic Evaluation of Summaries, Lin, 2004](https://www.aclweb.org/anthology/W04-1013 )
 
@@ -120,7 +120,7 @@ Seq2seq + attention 시스템은 자연스로운 output을 형성하는데 뛰�
 
 > - [ncorporating Copying Mechanism in Sequence-to-Sequence Learning, Gu et al, 2016]( https://arxiv.org/pdf/1603.06393.pdf )
 
-![copy mechanism](./img/copy_mechanisms.png)
+![copy mechanism](./img/copy_mechanism.PNG)
 
 ++copy mechanism의 한 예시++
 
@@ -154,7 +154,7 @@ copy mechansim의 단점인 copy too much 현상을 극복
 - bottom-up attention stage :
   seq2seq + attention 시스템은 'don't include'로 태그된 단어들을 attend할 수 없음 (apply a mask)
   
-![bottom-up summarization](./img/bottom-up_summarization.png)
+![bottom-up summarization](./img/bottom-up_summarization.PNG)
 
 simple but effective !
 > - Better overall content selection
