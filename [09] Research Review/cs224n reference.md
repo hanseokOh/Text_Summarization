@@ -62,6 +62,7 @@ Pre-neural summarization은 대개 extractive(추출적) 방식이었다.
 ### 2. Summarization Evaluation : ROUGE
 
 **ROUGE** (Recall-Oriented Understudy for Gisting Evaluation)
+
 ![ROUGE](./img/ROUGE.PNG)
 
 - [ROUGE : A pakage for Automatic Evaluation of Summaries, Lin, 2004](https://www.aclweb.org/anthology/W04-1013 )
