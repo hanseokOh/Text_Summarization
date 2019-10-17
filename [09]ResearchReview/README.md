@@ -10,9 +10,8 @@ stanford university의 2019년 NLP 강좌인 cs224n의 15강. Natural Language G
 **Task Definition**: 입력 텍스트 x가 주어지면, x보다 짧으며 주요한 정보를 담고있는 요약된 y를 작성한다.
 
 #### Task는 Single-Document / Multi-Document로 구분하여 진행한다. 
->> - **Single-Document**: 단일 문서 x를 요약하여 하나의 y를 작성한다.
-
->> - **Multi-Document**: 다중의 문서 x1,,,xn을 요약하여 하나의 요약 y를 작성한다.
+> - **Single-Document**: 단일 문서 x를 요약하여 하나의 y를 작성한다.
+> - **Multi-Document**: 다중의 문서 x1,,,xn을 요약하여 하나의 요약 y를 작성한다.
   
     일반적으로 x1,,,xn은 겹치는 내용이 있는 content이다.  e.g. News articles about the same event
 
@@ -23,39 +22,39 @@ Summarization은 어떠한 task이며, 관련한 연구, 데이터셋 그리고 
 https://github.com/mathsyouth/awesome-text-summarization
 
 > Single-Document 요약에서는, 서로 다른 길이와 스타일의 문서들이 있는 다양한 데이터셋이 존재한다.
->> - **Gigaword**: first one or two sentences of a news article -> headline
->>  (aka **sentence compression**)
->> - **LCSTS**(Chinese microblogging): paragraph -> sentence summary
->> - **NYT, CNN/DailyMail**: news article -> (multi)sentence summary
->> - **Wikihow**: full how-to article -> summary sentences
+> - **Gigaword**: first one or two sentences of a news article -> headline
+>  (aka **sentence compression**)
+> - **LCSTS**(Chinese microblogging): paragraph -> sentence summary
+> - **NYT, CNN/DailyMail**: news article -> (multi)sentence summary
+> - **Wikihow**: full how-to article -> summary sentences
 
 > **Sentence Simplification**은 다르지만, 유사한 task이다. 
 : rewrite the source text in a simpler (sometimes shorter) way
->> - Simple Wikipedia : standard Wikipedia sentence -> simple version
->> - Newsela : news article -> version written for children
+> - Simple Wikipedia : standard Wikipedia sentence -> simple version
+> - Newsela : news article -> version written for children
 
 #### Summarization: two main strategies
->> - **Extractive Summarization**: 요약을 형성하기 위해서 원본 텍스트에서 부분들을 선택한다. (typically sentences)
->>    Easier / Restrictive (no parphrasing)
->> - **Abstractive Summarization**: Natural Language Generation(NLG) 기술들을 활용해서 새로운 텍스트를 생성한다. 
->>    More difficult / More flexible (more human)
+> - **Extractive Summarization**: 요약을 형성하기 위해서 원본 텍스트에서 부분들을 선택한다. (typically sentences)
+>    Easier / Restrictive (no parphrasing)
+> - **Abstractive Summarization**: Natural Language Generation(NLG) 기술들을 활용해서 새로운 텍스트를 생성한다. 
+>    More difficult / More flexible (more human)
 
 #### Pre-neural summarization
 Pre-neural summarization은 대개 extractive(추출적) 방식이었다.
 
 ![Pipeline](./img/extractive_summarization_pipeline.PNG)
 > **Pipeline**:
->> - **Content selection** : 포함할 문장들을 몇가지 선택한다.
->> - **Information ordering**: 선택한 문장들의 순서를 정한다.
->> - **Sentence realization** : 문장들의 순서를 수정한다. (e.g. 단순화, 부분들 제거, 연결성 문제들을 수정)
+> - **Content selection** : 포함할 문장들을 몇가지 선택한다.
+> - **Information ordering**: 선택한 문장들의 순서를 정한다.
+> - **Sentence realization** : 문장들의 순서를 수정한다. (e.g. 단순화, 부분들 제거, 연결성 문제들을 수정)
 
 > pre-neural **content selection** algorithms:
->> - **Sentecne scoring functions**은 다음의 항목을 기반으로 할 수 있다.:
->>>- Presence of topic keywords, e.g.tf-idf 등을 통해서 계산
->>>- 문서에서 해당 문장이 어디에 나타났는지 등에 관한 변수들
->> - **Graph-based algorithms**은 문서를 각각의 문장쌍을 edge로 가지는 문장(node)들의 집합으로 본다.
->>>- Edge weight는 문장 유사도에 비례한다.
->>>- graph algorithms을 사용해서 어떤 문장들이 그래프에서 central한지 확인한다.
+> - **Sentecne scoring functions**은 다음의 항목을 기반으로 할 수 있다.:
+>>- Presence of topic keywords, e.g.tf-idf 등을 통해서 계산
+>>- 문서에서 해당 문장이 어디에 나타났는지 등에 관한 변수들
+> - **Graph-based algorithms**은 문서를 각각의 문장쌍을 edge로 가지는 문장(node)들의 집합으로 본다.
+>>- Edge weight는 문장 유사도에 비례한다.
+>>- graph algorithms을 사용해서 어떤 문장들이 그래프에서 central한지 확인한다.
 
 
 
